@@ -3,27 +3,33 @@ import styled from 'styled-components';
 import RightNav from './RightNav';
 
 const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
+  width: 30px;
+  height: 30px;
   position: fixed;
   top: 15px;
   right: 20px;
   z-index: 20;
   display: none;
+  transition: all 3s ease;
+  cursor: pointer;
+  text-align: center;
 
   @media (max-width: 768px) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    text-align: center;
   }
 
   div {
-    width: 2rem;
-    height: 0.25rem;
+    width: 30px;
+    height: 1.80px;
     background-color: ${({ open }) => open ? '#ccc' : '#333'};
     border-radius: 10px;
     transform-origin: 1px;
-    transition: all 0.3s linear;
+    transition: all  0.3 ease;
+
+  
 
     &:nth-child(1) {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
