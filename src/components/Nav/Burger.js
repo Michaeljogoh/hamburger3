@@ -10,7 +10,7 @@ const StyledBurger = styled.div`
   right: 20px;
   z-index: 20;
   display: none;
-  transition: all 3s ease;
+  transition:  3s ease;
   cursor: pointer;
   text-align: center;
 
@@ -27,7 +27,7 @@ const StyledBurger = styled.div`
     background-color: ${({ open }) => open ? '#ccc' : '#333'};
     border-radius: 10px;
     transform-origin: 1px;
-    transition: all  0.3 ease;
+    transition:   0.3 ease;
 
   
 
